@@ -1,0 +1,182 @@
+/* Corrected font-family usage */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Updated to use direct class */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 30px; 
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+}
+  
+.nav-items a {
+    text-decoration: none;
+    color: white; 
+    padding: 15px 20px;
+}
+
+/* Corrected font-family usage */
+.logo {
+    font-size: 15px;
+  
+    color: white;
+    text-decoration: none;
+}
+
+
+.image-container img {
+    max-width: 70%; 
+    height: 50%; 
+
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: center; /* Adjust alignment as needed */
+    align-items: center;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+    /* Add padding above the border */
+    width: 70%;
+    border: 2px solid grey; /* Adjust this value */
+  }
+  
+/* Styling for each article */
+.side-by-side  {
+   
+
+    box-sizing: border-box;
+    margin: 10px;
+    
+    width: 90%; 
+    margin: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .side-by-side article {
+        width: calc(50% - 20px); /* Calculate width for two columns with margins */
+    }
+}
+
+
+.side-by-side::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 77%; /* Adjust the height as needed */
+    background-color: grey;
+    margin: 0 5px; /* Adjust the margin to control the space between the line and images */
+    position: absolute;
+    top: 101%; /* Position the line at the top of the container */
+    left: 50%; /* Position the line in the middle of the container */
+    transform: translateX(50%); /* Center the line horizontally */
+}
+
+
+
+
+
+
+/* Styling for articles */
+article {
+    margin: 20px;
+    width: 50%; /* Adjust the width as needed */
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjustments for larger screens */
+
+
+h2{
+
+    font-size: 24px;
+    color:black;
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+
+p{
+    font-size: 16px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+}
+figure{
+    margin-bottom: 10px;
+}
+figure img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid grey;
+}
+figcaption{
+    font-size: 14px;
+    color: black;
+}
+
+
+
+.rights {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+   
+    height: 50px; /* Adjust height as needed */
+}
+
+h4 {
+    color: white;
+    
+    text-align: center; /* Remove default margin to ensure text is centered vertically */
+}
